@@ -32,20 +32,22 @@ client.on('message', (channel, tags, message, self) => {
         return ["El ewok desfigurado.",
             "El rey de los contenidos.",
             "El mismisimo Flaco Menouri.",
-            "El pastas.", "Lauricate (miralo vos,es global con 2 horas jugadas).",
+            "El pastas.",
+            "Lauricate (miralo vos,es global con 2 horas jugadas).",
             "El bigote del Sr Tuzo.",
             "Les mejores mods de la tierra.",
             "La coquita de cada dia.",
             "DJcorchacitos.",
-            "La peabody de Mastecs.",
+            "La nueva Ferrari de Mastecs.",
             "Los rolitos de la Clandenotti.",
             "El joven prodigio Tomks.",
             "El tilteo en el Fall Guys.",
-            "l bot carajeado.",
+            "El bot carajeado.",
             "Un ghostero.",
             "Un cheetero que se va a ir al infierno.",
             "La timba de cada stream.",
-            "El Keru tilteado."
+            "El Keru tilteado.",
+            "El Antisexo."
         ]
     }
 
