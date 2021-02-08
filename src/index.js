@@ -1,4 +1,6 @@
 const tmi = require('tmi.js');
+const dotenv = require('dotenv');
+dotenv.config();
 
 const client = new tmi.Client({
     options: { debug: true },
@@ -8,9 +10,9 @@ const client = new tmi.Client({
     },
     identity: {
         username: 'menottinator',
-        password: 'oauth:8h9msixp1pzqo2v0tk4qjln8f1v69z'
+        password: process.env.TWITCH_OAUTH_TOKEN
     },
-    channels: ['dieduarte']
+    channels: ['flacomenotti']
 });
 
 client.connect();
