@@ -10,7 +10,7 @@ app.listen(process.env.PORT, () =>
 );
 
 const client = new tmi.Client({
-    options: { debug: true },
+    options: { debug: false },
     connection: {
         secure: true,
         reconnect: true
