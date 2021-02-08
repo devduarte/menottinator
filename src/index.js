@@ -2,6 +2,13 @@ const tmi = require('tmi.js');
 const dotenv = require('dotenv');
 dotenv.config();
 
+const express = require('express');
+const app = express();
+
+app.listen(process.env.PORT, () =>
+    console.log('Menottinator ' + process.env.PORT || 80)
+);
+
 const client = new tmi.Client({
     options: { debug: true },
     connection: {
