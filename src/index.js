@@ -58,11 +58,14 @@ client.on('message', (channel, tags, message, self) => {
     if(message.toLowerCase() === '!cn') {
         client.say(channel, `@${tags.username}, En el mundo de Clandenotti serías: ` + item);
     }
-    if(message.toLowerCase().contains(`@${botname}`)){
+    if(message.toLowerCase().includes(`@${botname}`)){
         const rest2 = ["los bots no stremeamos.", "fui programado para que me guste el vino patero.", "no te hagas el cheto, flaco",
-        "01100011 01101111 01101101 01100001 01101110 01101101 01100101 00100000 01101100 01101111 00100000 01100100 01101111 00100000 01101000 01110101 01100101 01110110 01101111",
         "no ganan una partida ni en pedo", "<3 <3 yo tambien", "vos tambien <3 <3", "que onda amigue?"]
-        var item2 = rest2[Math.floor(Math.random() * resultados.length)];
+        const randomNumber = Math.floor(Math.random() * rest2.length)
+        console.log("el randomNumber es: " + randomNumber)
+        var item2 = rest2[randomNumber];
+        console.log("el item2 es: " + item2)
+
         client.say(channel, `@${tags.username} ` + item2);
     }
 });
